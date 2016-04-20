@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title> Google Page Rank </title>
+  </head>
+  <body>
+    <center>
+      <div style="font-family:Sans-serif,Verdana;font-size: 400%;font-weight: bold;padding-bottom:0cm;">GOOGLE PAGE RANK</div>
+      <div style="font-family:Sans-serif,Verdana;font-size: 125%"> By Derry Li and Cindy Li</div>
+      <br>
+      <br>
+    </center>
+    <div class="header">
+      Contents
+    </div>
+    <div class="body">
+      <a href="#Overview">1. Overview</a><br>
+      <a href="#History">2. History</a><br>
+      <a href="#Algorithm">3. Algorithm</a><br>
+      <a href="#Works">4. Works</a><br>
+      <a href="#Other">5. Other</a>
+
+
+
+    </div>
+      <div class="header" id="Overview">
+	Overview
+      </div>
+      <div class="body">
+	
+	Google Page Rank is a ranking algorithm for the Google search engine. It assigns numerical values to pages based on the links coming from and going to a page, with the purpose of ranking the importance of that page in comparison to other pages. It mainly uses links to determine a page's rankings, while taking in consideration for institutional hubs.
+
+      </div>
+      <br>
+      <div class="header" id="History">
+	History
+      </div>
+      <div class="body">
+
+	Google PageRank was developed in 1996 by Larry Page and Sergey Brin at Stanford University as a project to test a new search engine. Sergey Brin thought that webpages could be ranked based on how many links pointed to it. The prototype of the search engine was published in 1998. That same year, Page and Brin had founded Google, and decided to adopt this new kind of search engine to be used by Google from there on.
+	<br>
+	<br>
+	PageRank was influence by the concept of citation analysis, which a numerical examination on citations in books and journals, the creation of HyperSearch, which was also a link analysis search engine developed right before PageRank by Massimo Marchiori, and RankDex, a small search engine developed in 1996 that explored link analysis as well.
+	<br>
+	<br>
+	The name, PageRank which contains the word Page, is both because of Larry Page's name as well as the idea of a webpage. The word is trademarked by Google, and the algorithm for it is also patented. The patent though, is assigned to Standford University, where PageRank was developed, but Google as exclusive licensing rights to it.
+
+      </div>
+      <br>
+      <div class="header" id="Algorithm">
+	Algorithm
+      </div>
+      <div class="body">
+	PR(a) = (1 - d) + d(PR(b)/L(b) + PR(c)/L(c) + ... + PR(n)/L(n))
+	<br>
+	
+	PR(x) = Pagerank of page x
+	<br>
+	d = dampening factor
+	<br>
+	L(x) = links on page x<br>
+      </div>
+      <br>
+      <div class="header" id="Works">
+	How It Works
+      </div>
+      
+      <div class="body">
+	The algorithm calculates the PageRank of one page based on the PageRank of another page that has a link going to the first page. The PageRank of all pages are calculated at once by starting at a random number and running repeated iterations on all PageRanks. Google then does a re-indexing once a month.
+	<br>
+	<br>
+	The dampening factor is a factor that both decreases how much links affect the PageRank of a page and also lowers the under of iterations needed. Too high of a dampening factor can increase the number of iterations, while too low can cause overshooting of an average among the PageRanks.
+	<br>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/PageRanks-Example.svg">
+      </div>
+      <br>
+
+      <div class="header" id="Other">
+	Other Algorithms
+      </div>
+
+      <div class="body">
+	Google Panda (2011): aimed to decrease the PageRank of low quality sites and increase ranks of higher quality sites<br>
+	Google Penguin (2012): aimed to decrease the PageRank of websites that use illegal ways to increase PageRanks<br>
+	Google Hummingbird (2013): update to the search algorithm so that it also takes the phrase into context instead of just each word<br>
+
+
+      </div>
+
+      <div class="header" id="Sources">
+	Sources
+      </div>
+
+      <div class="body">
+	Thank you to these sources for helping us understand Google PageRank!<br>
+	<a href="http://www.cs.princeton.edu/~chazelle/courses/BIB/pagerank.htm">Princeton</a><br>
+	<a href="https://www.google.com/insidesearch/howsearchworks/algorithms.html">Google</a><br>
+	<a href="http://infolab.stanford.edu/~backrub/google.html">Standford</a><br>
+      </div>
+
+    </body>
+</html>
